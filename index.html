@@ -237,15 +237,17 @@
     </div>
 
     <div class="sidebar" id="categorySidebar">
-        <div class="sidebar-header"><span>Каталог</span><button class="close-btn" onclick="closeAllMenus()">&times;</button></div>
-        <div class="menu-item" onclick="filterProducts('all')"><i class="fas fa-th-large"></i> Всі товари</div>
-        <div class="menu-item" onclick="filterProducts('fresh')"><i class="fas fa-fish"></i> Свіжа риба</div>
-        <div class="menu-item" onclick="filterProducts('smoked')"><i class="fas fa-fire"></i> Копчена</div>
-        <div class="menu-item" onclick="filterProducts('salted')"><i class="fas fa-utensils"></i> Слабосолена</div>
-        <div class="menu-item" onclick="filterProducts('dried')"><i class="fas fa-sun"></i> В'ялена</div>
-        <div class="menu-item" onclick="filterProducts('snacks')"><i class="fas fa-beer"></i> Снеки</div>
-        <div class="menu-item" onclick="filterProducts('salads')"><i class="fas fa-leaf"></i> Салати</div>
+    <div class="sidebar-header">
+        <span>Каталог</span>
+        <button class="close-btn" onclick="closeAllMenus()">&times;</button>
     </div>
+    <div class="menu-item" onclick="filterProducts('all')">
+        <i class="fas fa-th-large"></i> Весь асортимент
+    </div>
+    <div class="menu-item" onclick="filterProducts('snacks')">
+        <i class="fas fa-beer"></i> Снеки до пива
+    </div>
+</div>
 
     <div class="cart-sidebar" id="cartSidebar">
         <div class="sidebar-header"><span>Кошик</span><button class="close-btn" onclick="closeAllMenus()">&times;</button></div>
