@@ -42,13 +42,67 @@
         #scrollTopBtn:hover { background-color: #008037; transform: translateY(-3px); }
 
         /* HEADER */
-        header { background-color: #00a046; padding: 15px 20px; display: flex; align-items: center; color: white; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.2); flex-wrap: wrap; gap: 10px; }
-        .menu-btn { background: none; border: none; color: white; font-size: 28px; cursor: pointer; margin-right: 15px; }
-        .logo { font-size: 26px; font-weight: bold; display: flex; align-items: center; gap: 10px; margin-right: auto; cursor: pointer; text-decoration: none; color: white; }
-        .logo:hover { opacity: 0.8; }
-        @media (max-width: 900px) { .logo { display: none; } }
-        
-        .store-status { font-size: 14px; font-weight: bold; padding: 5px 12px; border-radius: 20px; background-color: rgba(0,0,0,0.2); margin-right: 10px; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+  header { 
+      background-color: #00a046; 
+      padding: 15px 20px; 
+      display: flex; 
+      align-items: center; 
+      color: white; 
+      position: sticky; 
+      top: 0; 
+      z-index: 100; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+      flex-wrap: wrap; 
+      gap: 10px; 
+  }
+
+  .menu-btn { 
+      background: none; 
+      border: none; 
+      color: white; 
+      font-size: 28px; 
+      cursor: pointer; 
+      margin-right: 15px; 
+  }
+
+  /* Логотип тепер видимий завжди */
+  .logo { 
+      font-size: 26px; 
+      font-weight: bold; 
+      display: flex; 
+      align-items: center; 
+      gap: 10px; 
+      margin-right: auto; 
+      cursor: pointer; 
+      text-decoration: none; 
+      color: white; 
+  }
+
+  .logo:hover { opacity: 0.8; }
+
+  /* Налаштування для мобільних (до 768px) */
+  @media (max-width: 768px) {
+      .logo { 
+          font-size: 20px; /* Трохи менший текст, щоб вліз */
+          margin-right: 10px;
+      }
+      .logo i { 
+          display: none; /* Ховаємо іконку рибки на мобільних, залишаємо тільки текст */
+      }
+  }
+
+  .store-status { 
+      font-size: 14px; 
+      font-weight: bold; 
+      padding: 5px 12px; 
+      border-radius: 20px; 
+      background-color: rgba(0,0,0,0.2); 
+      margin-right: 10px; 
+      display: flex; 
+      align-items: center; 
+      gap: 5px; 
+      white-space: nowrap; 
+  }
         @media (max-width: 600px) { .store-status { display: none; } }
 
         .search-bar { flex-grow: 1; max-width: 500px; display: flex; margin: 0 10px; }
